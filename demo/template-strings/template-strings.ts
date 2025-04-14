@@ -7,3 +7,5 @@ import { strict as assert } from "assert";
 // Useful links:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
 //
+
+console.log("test");
