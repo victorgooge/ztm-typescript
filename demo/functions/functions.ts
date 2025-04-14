@@ -13,3 +13,29 @@ import { strict as assert } from "assert";
 // Useful links:
 // https://www.typescriptlang.org/docs/handbook/2/functions.html
 //
+
+function sayHello() {
+    console.log("hello")
+}
+sayHello();
+
+function sum(x, y) {
+    return x + y;
+}
+const s = sum(5, 3);
+console.log(s);
+assert.equal(s, 8);
+
+const answer1 = sum(2, 2);
+const answer2 = sum(answer1, 2);
+const answer3 = sum(answer1, answer2);
+assert.equal(answer3, 10);
+
+
+const multiply = (a, b) => {
+    return a * b;
+}
+const m = 3 * 3;
+console.log(m);
+assert.equal(m, 9);
+

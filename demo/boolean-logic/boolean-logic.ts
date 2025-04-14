@@ -7,3 +7,22 @@ import { strict as assert } from "assert";
 // express conditions and make decisions based on the truth or falsehood of
 // these conditions.
 //
+
+const yes = true;
+const no = false;
+
+const age = 18;
+const canPurchase = age >= 18;
+assert.equal(canPurchase, true); // check if two things are equal
+
+const denyPurchase = age < 18;
+assert.equal(denyPurchase, false);
+
+const two = 2;
+const isThree = (1 + two) === 3;
+assert.equal(isThree, true);
+
+const isNotThree = (2 + two) !== 3;
+assert.equal(isNotThree, true);
+
+// if all asserts are true, no error will be thrown
